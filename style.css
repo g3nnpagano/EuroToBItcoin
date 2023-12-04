@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('images\\final_size-topstory_20211027022157.gif');
+  }
+.container{
+    width: 500px; /* Modifica la larghezza del tuo contenitore quadrato */
+    height: 500px; /* Modifica l'altezza del tuo contenitore quadrato */
+    background-color: #ffffff; /* Colore bianco */
+    border: 1px solid #ccc; /* bordo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Aggiungi padding se necessario */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+.numbers{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+#countLabel {
+    display:block;
+    font-size:50px;
+}
+#euroLabel {
+    display:block;
+    margin-right: 30px;
+    font-size:50px;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    transition: background-color 0.3s;
+}
+
+button.negative, button.neutral {
+    color: white;
+}
+
+button.negative {
+    background-color: #FF6666;
+}
+
+button.positive {
+    background-color: #66FF66;
+}
+
+button.neutral {
+    background-color: #CCCCCC;
+}
+
+button:hover {
+    background-color: #444444;
+}
+
+#bitcoinValue{
+    font-size:40px;
+}
+#author {
+    font-size:20px;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    /* Aggiustamenti per schermi con larghezza massima di 600px */
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
